@@ -1,0 +1,27 @@
+{
+    "en": {
+      "translation": {
+        "App Title": "Simple React App",
+        "Email address": "Email address",
+        "Disclaimer": "We'll never share your email with anyone else.",
+        "Password": "Password",
+        "Submit": "Submit",
+        "Language":"Language",
+        "Login":"Login",
+        "Welcome":"Welcome"
+      }
+    },
+    "zh": {
+      "translation": {
+        "App Title": "Simple React App",
+        "Email address": "電郵地址",
+        "Disclaimer": "我們不會向第三方分享你的電郵地址。",
+        "Password": "密碼",
+        "Submit": "提交",
+        "Language":"語言",
+        "Login":"登入",
+        "Welcome":"歡迎"
+
+      }
+    }
+  }

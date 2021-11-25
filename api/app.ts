@@ -26,6 +26,8 @@ passport.use(new LocalStrategy({ usernameField: 'login', },
 ));
 app.use(passport.initialize());
 
+app.use(express.static('./public'))
+
 app.get('/hello', (req, res) => {
     res.send('Hello World!')
 })

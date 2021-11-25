@@ -1,14 +1,11 @@
-import React, { ReactElement, useState } from 'react'
+import { ReactElement, useState } from 'react'
 import { Form, Button, Container } from 'react-bootstrap'
-import { Prev } from 'react-bootstrap/esm/PageItem'
 import { useTranslation } from 'react-i18next'
+import {useNavigate} from 'react-router-dom'
 
-interface Props {
-
-}
-
-export default function LoginPage({ }: Props): ReactElement {
+export default function LoginPage(): ReactElement {
     const [formState, setFormState] = useState({email:"",password:""})
+    const navigate = useNavigate();
     const {t} = useTranslation()
 
 
@@ -34,7 +31,7 @@ export default function LoginPage({ }: Props): ReactElement {
                     
                 </Form.Group>
 
-                <Button variant="primary" onClick={()=>console.log(formState)}>
+                <Button variant="primary" onClick={()=>navigate("/welcome")}>
                     {t("Submit")}
                 </Button>
         </Container>
